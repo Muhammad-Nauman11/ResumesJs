@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- div with white background-color and black border -->
+<div class="outer">
+    <!-- div with gray background-color and is on left side of parent div -->
+    <div class="inner">
+        <div class="left">
+            <img src="image.png" alt="Muhammad Nauman"/>
+            <div name="Objectives" class="font-heading font-paragraph font-color">
+                <h2 onclick="ShowContent('objectives')">OBJECTIVE</h2>
+                <!-- <button onclick="ShowContent(event)"><h2>OBJECTIVE</h2></button> -->
+
+                <p id="objectives">
+                    <!-- Looking for opportunities to
+                    utilize my skills and knowledge.
+                    Excited to work on design and
+                    development of smart web and
+                    desktop applications.  -->
+                </p>
+            </div>
+            <div name="Contact"  class="font-heading font-paragraph font-color">
+                <h2  style="cursor: alias;">CONTACT</h2>
+                <div class="contact" >
+                    <p>PHONE:  0313-4847834</p>
+                    <p>RESIDENCE: Lahore</p>
+                    <p>WEBSITE:<br><a href="linkedin.com/in/muhammad-nauman-8b0235195" style="color:#548AB7; background-color: white;">linkedin.com/in/muhammad-nauman-8b0235195</a></p>
+                    <p>EMAIL:<br><a href="outlook" style="color:#548AB7;background-color: white">muhammadnaumanna11@gmail.com</a></p>
+                </div>
+            </div>
+            <div name="Skills"  class="font-heading font-paragraph font-color">
+                <h2 onclick="ShowContent('skills')">SKILLS</h2>
+                    <ul id="skills">
+                        <!-- <li>Programming (Python, C++, Assembly Language)</li>
+                        <li>CAD & CAM (Solidworks, Autocad, 3Ds Max)</li>
+                        <li>PLC (Siemens, Allen Bradley)</li>
+                        <li>MATLAB (Signal Processing, Control System, Data Acquisition)</li> -->
+                    </ul>
+                
+            </div>
+            <div name="Hobbies"  class="font-heading font-paragraph font-color">
+                <h2 onclick="ShowContent('hobbies')">HOBBIES</h2>
+                    <ul id="hobbies">
+                        <!-- <li>Video Gaming</li>
+                        <li>Book Reading</li>
+                        <li>Watching Movies</li>
+                        <li>Exploring software</li> -->
+                    </ul>
+                
+            </div>
+            <div name="Activities"  class="font-heading font-paragraph font-color">
+                <h2 onclick="ShowContent('activities')">EXTRA-CURRICULAR ACTIVITIES</h2>
+
+                    <ul id="activities">
+                        <!-- <li>Won ASME general knowledge quiz competition</li>
+                        <li>Participated in NCRA industrial product competition</li> -->
+                    </ul>
+                </div>
+            
+        </div>
+<!-- div on the right side with grey color and has another div that is white in color. This div is at back of child div -->
+        <div class="right">
+            <div class="right-back">
+                <div class="right-front">
+                    <div>
+                        <h1>MUHAMMAD NAUMAN</h1><hr>
+                        <h2 style="font-size: 20px; cursor: alias;">Mechatronics Engineer</h2>
+                    </div>
+                    <!-- Education div with tables to show organized data -->
+                    <div name="Education" class="font-heading font-paragraph">
+                        <h2 onclick="ShowContent(event)">EDUCATION</h2><hr>
+
+                        <div class="education" >
+                            <table>
+                                <tr>
+                                    <th>BSc. Mechatronics and Control Engineering</th>
+                                    <th>2018 - 2022</th>
+                                </tr>
+                                <tr>
+                                    <td>University of Engineering and Technology</td>
+                                    <td>CGPA  3.65</td>
+                                </tr>
+                                <track>
+                                    <th>FSc. Pre-Engineering</th>
+                                    <th>2015 - 2018</th>
+                                </tr>
+                                <tr>
+                                    <td>Pak Turk College Lahore</td>
+                                    <td>89%</td>
+                                </tr>
+            
+                                <tr>
+                                    <th>Matriculation</th>
+                                    <th>2013 - 2015</th>
+                                </tr>
+                                <tr>
+                                    <td>Govt. High school Sher Shah</td>
+                                    <td>92%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Work experience div with list as childs -->
+                    <div name="Work-Experience"  class="font-heading font-paragraph">
+                        <h2 style="cursor: alias;">WORK EXPERIENCE</h2><hr>
+                        <div class="experience" id="experience" >
+                            <h2 onclick="ShowContent('project1')">Freelancer Python Programmer, Fiverr Lahore |Sep 2021 - Current<img src="cross.png"></h2>
+                            <ul id="project1">
+                                <!-- <li>Designed 2D adventure puzzle games, AI software, desktop applications and programs to aid in processing data.</li>
+                                <li>Debugged errors in NIST Bit Testing Program. Earned Level One Seller Award in two months.</li> -->
+                            </ul>
+                            <div>
+                                <h2 onclick="ShowContent('project2')">Delta Pick & Place Robot, RM Robotics Lahore |Oct 2021 - June 2022</h2>
+                                <ul id="project2">
+                                    <!-- <li>Design and Development of delta pick and place robot using Raspberry pi, machine vision and Python Kivy.</li> -->
+                                </ul>
+                            </div>
+        
+                            <div>
+                                <h2 onclick="ShowContent('project3')">PLC Projects, RM Robotics Lahore |June 2021 - July 2021<img src="cross.png"></h2>
+                                <ul id="project3">
+                                    <!-- <li>Developed a stamping mechanism controlled by Allen Bradley PLC.</li>
+                                    <li>Designed the traffic signal lights project RS Logix 500 software.</li> -->
+                                </ul>
+                            </div>
+        
+                            <div>
+        
+                            <div>
+                                <h2 onclick="ShowContent('project4')">Modeling and Simulation Project, UET Lahore |April 2021 - July 2021</h2>
+                                <ul id="project4">
+                                    <!-- <li>Modelled the dynamics of prosthetic ankle, simulate it on MATLAB.</li> -->
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 onclick="ShowContent('project5')">Embedded Systems Projects, UET Lahore |Feb 2021 - July 2021</h2>
+                                <ul id="project5">
+                                    <!-- <li>Worked on integration of software and hardware using TM4c123, FSR, LCD.</li>
+                                    <li>Designed Arduino based autonomous vacuum cleaner robot.</li>
+                                    <li>Worked on position control of stepper motor driven robotic arm using raspberry pi.</li> -->
+                                </ul>
+                            </div>
+                            <h2 onclick="ShowContent('project6')">Game Design, UET Lahore |Dec 2019 - May 2020</h2>
+                            <ul id="project6">
+                                <!-- <li>Designed an adventure puzzle Game "Maze Runner". Added a lot of features to increase interest of the gamers. Designed an algorithm to generate random maze and to solve that maze.</li> -->
+                            </ul>
+                        </div>
+                    </div>        
+
+                </div>
+            </div>
+
+        </div>
+
+</div>
+<script type = "text/javascript" src="script.js"></script>
+</body>
+</html>
