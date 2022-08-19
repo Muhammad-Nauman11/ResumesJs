@@ -9,54 +9,37 @@
     <!-- div with gray background-color and is on left side of parent div -->
     <div class="inner">
         <div class="left">
-            <img src="image.png" alt="Muhammad Nauman"/>
-            <div name="Objectives" class="font-heading font-paragraph font-color">
-                <h2 onclick="ShowContent('objectives')">OBJECTIVE</h2>
-                <!-- <button onclick="ShowContent(event)"><h2>OBJECTIVE</h2></button> -->
-
+            <img src="image.png" alt="Muhammad Nauman" onclick="ShowAll(this)" style="cursor:pointer;" />
+            <div name="Objectives" class="heading-font font-paragraph font-color">
+                <h2 onclick="ShowContent(this,'objectives')">OBJECTIVE<img src="down.png" style="float: right;"></h2>
                 <p id="objectives">
-                    <!-- Looking for opportunities to
-                    utilize my skills and knowledge.
-                    Excited to work on design and
-                    development of smart web and
-                    desktop applications.  -->
                 </p>
             </div>
-            <div name="Contact"  class="font-heading font-paragraph font-color">
-                <h2 onclick="ShowContent(event)">CONTACT</h2>
+            <div name="Contact"  class="heading-font font-paragraph font-color">
+                <h2  style="cursor: auto;">CONTACT</h2>
                 <div class="contact" >
                     <p>PHONE:  0313-4847834</p>
                     <p>RESIDENCE: Lahore</p>
                     <p>WEBSITE:<br><a href="linkedin.com/in/muhammad-nauman-8b0235195" style="color:#548AB7; background-color: white;">linkedin.com/in/muhammad-nauman-8b0235195</a></p>
-                    <p>EMAIL:<br><a href="outlook" style="color:#548AB7;background-color: white">muhammadnaumanna11@gmail.com</a></p>
+                    <p>EMAIL:<br><a href="mailto:muhammadnaumanna11@gmail.com" style="color:#548AB7;background-color: white">muhammadnaumanna11@gmail.com</a></p>
                 </div>
             </div>
-            <div name="Skills"  class="font-heading font-paragraph font-color">
-                <h2 onclick="ShowContent('skills')">SKILLS</h2>
+            <div name="Skills"  class="heading-font font-paragraph font-color">
+                <h2 onclick="ShowContent(this,'skills')">SKILLS<img src="down.png" style="float: right;"></h2>
                     <ul id="skills">
-                        <!-- <li>Programming (Python, C++, Assembly Language)</li>
-                        <li>CAD & CAM (Solidworks, Autocad, 3Ds Max)</li>
-                        <li>PLC (Siemens, Allen Bradley)</li>
-                        <li>MATLAB (Signal Processing, Control System, Data Acquisition)</li> -->
                     </ul>
                 
             </div>
-            <div name="Hobbies"  class="font-heading font-paragraph font-color">
-                <h2 onclick="ShowContent('hobbies')">HOBBIES</h2>
+            <div name="Hobbies"  class="heading-font font-paragraph font-color">
+                <h2 onclick="ShowContent(this,'hobbies')">HOBBIES<img src="down.png" style="float: right;"></h2>
                     <ul id="hobbies">
-                        <!-- <li>Video Gaming</li>
-                        <li>Book Reading</li>
-                        <li>Watching Movies</li>
-                        <li>Exploring software</li> -->
                     </ul>
                 
             </div>
-            <div name="Activities"  class="font-heading font-paragraph font-color">
-                <h2 onclick="ShowContent(event)">EXTRA-CURRICULAR ACTIVITIES</h2>
+            <div name="Activities"  class="heading-font font-paragraph font-color">
+                <h2 onclick="ShowContent(this,'activities')">EXTRA-CURRICULAR ACTIVITIES<img src="down.png"  style="float: right;"></h2>
 
                     <ul id="activities">
-                        <!-- <li>Won ASME general knowledge quiz competition</li>
-                        <li>Participated in NCRA industrial product competition</li> -->
                     </ul>
                 </div>
             
@@ -67,11 +50,12 @@
                 <div class="right-front">
                     <div>
                         <h1>MUHAMMAD NAUMAN</h1><hr>
-                        <h2 style="font-size: 20px;">Mechatronics Engineer</h2>
+                        <h2 style="font-size: 20px; cursor: auto;">Mechatronics Engineer</h2>
                     </div>
                     <!-- Education div with tables to show organized data -->
-                    <div name="Education" class="font-heading font-paragraph">
-                        <h2 onclick="ShowContent(event)">EDUCATION</h2><hr>
+                    <div name="Education" class="heading-font font-paragraph">
+                        <!-- <h2 onclick="ShowContent(this,event)">EDUCATION</h2><hr> -->
+                        <h2 style="cursor:auto;">EDUCATION</h2><hr>
 
                         <div class="education" >
                             <table>
@@ -104,49 +88,39 @@
                         </div>
                     </div>
                     <!-- Work experience div with list as childs -->
-                    <div name="Work-Experience"  class="font-heading font-paragraph">
-                        <h2 onclick="ShowContent(event)">WORK EXPERIENCE</h2><hr>
-                        <div class="experience" >
-                            <h2>Freelancer Python Programmer, Fiverr Lahore |Sep 2021 - Current</h2>
-                            <ul>
-                                <li>Designed 2D adventure puzzle games, AI software, desktop applications and programs to aid in processing data.</li>
-                                <li>Debugged errors in NIST Bit Testing Program. Earned Level One Seller Award in two months.</li>
-                            </ul>
+                    <div name="Work-Experience"  class="heading-font font-paragraph">
+                        <h2 style="cursor: auto;">WORK EXPERIENCE</h2><hr>
+                        <div class="experience" id="experience" >
+                            <h3 onclick="ShowContent(this,'project1')">Freelancer Python Programmer, Fiverr Lahore |Sep 2021 - Current<img src="down.png" style="float: right;"></h3>
+                            <ul id="project1">
+                            </ul><hr style="border: 0.5px dashed #548AB7;">
                             <div>
-                                <h2>Delta Pick & Place Robot, RM Robotics Lahore |Oct 2021 - June 2022</h2>
-                                <ul>
-                                    <li>Design and Development of delta pick and place robot using Raspberry pi, machine vision and Python Kivy.</li>
-                                </ul>
+                                <h3 onclick="ShowContent(this,'project2')">Delta Pick & Place Robot, RM Robotics Lahore |Oct 2021 - June 2022<img src="down.png" style="float: right;"></h3>
+                                <ul id="project2">
+                                </ul><hr style="border: 0.5px dashed #548AB7;">
                             </div>
         
                             <div>
-                                <h2>PLC Projects, RM Robotics Lahore |June 2021 - July 2021</h2>
-                                <ul>
-                                    <li>Developed a stamping mechanism controlled by Allen Bradley PLC.</li>
-                                    <li>Designed the traffic signal lights project RS Logix 500 software.</li>
-                                </ul>
+                                <h3 onclick="ShowContent(this,'project3')">PLC Projects, RM Robotics Lahore |June 2021 - July 2021<img src="down.png" style="float: right;"></h3>
+                                <ul id="project3">
+                                </ul><hr style="border: 0.5px dashed #548AB7;">
                             </div>
         
                             <div>
         
                             <div>
-                                <h2>Modeling and Simulation Project, UET Lahore |April 2021 - July 2021</h2>
-                                <ul>
-                                    <li>Modelled the dynamics of prosthetic ankle, simulate it on MATLAB.</li>
-                                </ul>
+                                <h3 onclick="ShowContent(this,'project4')">Modeling and Simulation Project, UET Lahore |April 2021 - July 2021<img src="down.png" style="float: right;"></h3>
+                                <ul id="project4">
+                                </ul><hr style="border: 0.5px dashed #548AB7;">
                             </div>
                             <div>
-                                <h2>Embedded Systems Projects, UET Lahore |Feb 2021 - July 2021</h2>
-                                <ul>
-                                    <li>Worked on integration of software and hardware using TM4c123, FSR, LCD.</li>
-                                    <li>Designed Arduino based autonomous vacuum cleaner robot.</li>
-                                    <li>Worked on position control of stepper motor driven robotic arm using raspberry pi.</li>
-                                </ul>
+                                <h3 onclick="ShowContent(this,'project5')">Embedded Systems Projects, UET Lahore |Feb 2021 - July 2021<img src="down.png" style="float: right;"></h3>
+                                <ul id="project5">
+                                </ul><hr style="border: 0.5px dashed #548AB7;">
                             </div>
-                            <h2>Game Design, UET Lahore |Dec 2019 - May 2020</h2>
-                            <ul>
-                                <li>Designed an adventure puzzle Game "Maze Runner". Added a lot of features to increase interest of the gamers. Designed an algorithm to generate random maze and to solve that maze.</li>
-                            </ul>
+                            <h3 onclick="ShowContent(this,'project6')">Game Design, UET Lahore |Dec 2019 - May 2020<img src="down.png" style="float: right;"></h3>
+                            <ul id="project6">
+                            </ul><hr style="border: 0.5px dashed #548AB7;">
                         </div>
                     </div>        
 
